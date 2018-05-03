@@ -7,7 +7,6 @@ RUN pip install "devpi-server==4.4.0" \
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod +x /docker-entrypoint.sh
 
-USER devpi
 VOLUME /data
 ENV HOME /data
 EXPOSE 4040
