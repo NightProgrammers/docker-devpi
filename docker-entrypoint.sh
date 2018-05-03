@@ -2,7 +2,7 @@
 
 function initialize {
     echo "[RUN]: Initialise devpi-server"
-    devpi-server --restrict-modify root --start --host 127.0.0.1 --port 4040
+    devpi-server --restrict-modify root --start --host 127.0.0.1 --port 4040 --init
     devpi-server --status
     devpi use http://localhost:4040
     devpi login root --password ''
